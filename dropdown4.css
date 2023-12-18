@@ -1,0 +1,185 @@
+/* Återställ standardmarginal och sätt bakgrundsfärg */
+body {
+    margin: 0;
+    background-color: #333;
+    z-index: 30;
+}
+
+/* Stil för den översta navigeringsfältet */
+.topbar {
+    overflow: visible;
+    background-color: #333; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.topbar a, .dropbtn {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topbar a:hover, .dropdown:hover .dropbtn {
+    background: #ddd;
+    color: black;
+}
+
+/* Stil för rullgardinsmeny */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out; /* Adjusted the transition property */
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-10px); /* Initially move up by 10px */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.5s ease-in-out; /* Adjusted the transition property for text */
+    opacity: 0; /* Initially set opacity to 0 for text */
+    transform: translateY(-10px); /* Initially move up text by 10px */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    opacity: 1; /* Fade in by setting opacity to 1 */
+    transform: translateY(0); /* Move down to its original position */
+}
+
+.dropdown:hover .dropdown-content a {
+    opacity: 1; /* Fade in the text by setting opacity to 1 */
+    transform: translateY(0); /* Move down text to its original position */
+}
+
+/* Huvudinnehållsstil */
+.main {
+    padding: 16px;
+    margin-top: 80px;
+}
+
+/* Stil för specifika element med ID */
+#bild_1 {
+    width: 45%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#bild_2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87% !important;
+    height: auto !important;
+}
+
+#bild_3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120% !important;
+    height: auto !important;
+}
+
+#center_text {
+    text-align: center;
+}
+
+.stor_bild {
+    align-self: center;
+}
+
+.Rubrik {
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Stil för grid-container */
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.container2 {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+/* Centrera element */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 5px;
+}
+
+/* Teckensnittsstil för stycken, länkar och listobjekt */
+p, a, li {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 20px !important;
+}
+
+#textstil {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 20px !important;
+}
+
+/* Stil för sidfoten */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Rubrikstil */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: 10px;
+}
+
+/* Bakgrundsfärg för sidan */
+body {
+    background-color: rgb(102, 102, 102);
+}
